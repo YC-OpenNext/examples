@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+env:
+  NODE_VERSION: 22
+
+jobs:
+  build-examples:
+    name: Build Example
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        example:
+          - next12-pages-isr
+          - next13-app-router
+          - next14-mixed
+          - next15-modern
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Install dependencies
+        working-directory: ${{ matrix.example }}
+        run: npm install
+
+      - name: Build
+        working-directory: ${{ matrix.example }}
+        run: npm run build
+
+      - name: Verify build output
+        working-directory: ${{ matrix.example }}
+        run: test -d .next
