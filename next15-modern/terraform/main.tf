@@ -5,7 +5,7 @@
 # Server Actions body size limit is 2mb (configured in next.config.js).
 
 module "nextjs" {
-  source = "github.com/YC-OpenNext/terraform-yandex-nextjs//modules/nextjs_yc?ref=v1.0.0"
+  source = "github.com/YC-Next/terraform-yandex-nextjs//modules/nextjs_yc?ref=v1.0.0"
 
   app_name       = "next15-modern"
   env            = "dev"

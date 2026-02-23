@@ -1,6 +1,6 @@
-# YC-OpenNext Examples
+# YC-Next Examples
 
-Example Next.js projects demonstrating deployment to Yandex Cloud with [YC-OpenNext](https://github.com/YC-OpenNext/cli).
+Example Next.js projects demonstrating deployment to Yandex Cloud with [YC-Next](https://github.com/YC-Next/cli).
 
 ## Examples
 
@@ -29,7 +29,7 @@ cd next14-mixed
 
 # Build
 npm install && npm run build
-yc-opennext build --project . --output ./build
+yc-next build --project . --output ./build
 
 # Deploy
 cd terraform

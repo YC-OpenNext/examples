@@ -26,7 +26,7 @@ Deploy the Next.js 14 mixed router example to Yandex Cloud.
    cd ..
    npm install
    npm run build
-   yc-opennext build --project . --output ./build
+   yc-next build --project . --output ./build
    ```
 
 2. Edit `main.tf` to set your `domain_name` and adjust other parameters as needed.

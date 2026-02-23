@@ -5,7 +5,7 @@
 # Server Components and streaming may benefit from higher memory in production.
 
 module "nextjs" {
-  source = "github.com/YC-OpenNext/terraform-yandex-nextjs//modules/nextjs_yc?ref=v1.0.0"
+  source = "github.com/YC-Next/terraform-yandex-nextjs//modules/nextjs_yc?ref=v1.0.0"
 
   app_name       = "next13-app-router"
   env            = "dev"

@@ -6,7 +6,7 @@
 # due to middleware + server actions overhead.
 
 module "nextjs" {
-  source = "github.com/YC-OpenNext/terraform-yandex-nextjs//modules/nextjs_yc?ref=v1.0.0"
+  source = "github.com/YC-Next/terraform-yandex-nextjs//modules/nextjs_yc?ref=v1.0.0"
 
   app_name       = "next14-mixed"
   env            = "dev"

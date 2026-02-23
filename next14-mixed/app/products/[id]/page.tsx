@@ -35,7 +35,7 @@ const products: Record<
   },
   '2': {
     id: '2',
-    name: 'YC-OpenNext Deployment Guide',
+    name: 'YC-Next Deployment Guide',
     description: 'Comprehensive guide for deploying Next.js applications to Yandex Cloud',
     price: 49.99,
     category: 'Documentation',

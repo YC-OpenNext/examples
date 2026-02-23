@@ -1,10 +1,10 @@
 # Next.js 14 Mixed Test Fixture
 
-A comprehensive test fixture for validating YC-OpenNext deployment on Yandex Cloud. This fixture demonstrates all major Next.js 14 features including both App Router and Pages Router patterns.
+A comprehensive test fixture for validating YC-Next deployment on Yandex Cloud. This fixture demonstrates all major Next.js 14 features including both App Router and Pages Router patterns.
 
 ## Overview
 
-This fixture is designed to test the complete functionality of Next.js 14 applications when deployed to Yandex Cloud using YC-OpenNext. It includes examples of all rendering strategies, routing patterns, and API implementations.
+This fixture is designed to test the complete functionality of Next.js 14 applications when deployed to Yandex Cloud using YC-Next. It includes examples of all rendering strategies, routing patterns, and API implementations.
 
 ## Features Demonstrated
 
@@ -181,7 +181,7 @@ npm run build
 # Start production server
 npm start
 
-# Test with YC-OpenNext
+# Test with YC-Next
 npm run test:build
 ```
 
@@ -263,17 +263,17 @@ NODE_ENV=production
 
 ## Deployment
 
-### Using YC-OpenNext
+### Using YC-Next
 
 ```bash
 # Build the Next.js app
 npm run build
 
-# Run YC-OpenNext to prepare for Yandex Cloud
-npx yc-opennext
+# Run YC-Next to prepare for Yandex Cloud
+npx yc-next
 
 # Deploy to Yandex Cloud
-# (Follow YC-OpenNext deployment instructions)
+# (Follow YC-Next deployment instructions)
 ```
 
 ### Expected Deployment Results
@@ -393,7 +393,7 @@ This example includes Terraform configuration for deploying to Yandex Cloud.
    ```bash
    npm install
    npm run build
-   yc-opennext build --project . --output ./build
+   yc-next build --project . --output ./build
    ```
 
 2. Configure and apply Terraform:
@@ -409,7 +409,7 @@ See [terraform/README.md](terraform/README.md) for detailed instructions.
 
 ## Contributing
 
-This is a test fixture. Modifications should ensure comprehensive coverage of Next.js 14 features for YC-OpenNext validation.
+This is a test fixture. Modifications should ensure comprehensive coverage of Next.js 14 features for YC-Next validation.
 
 ## License
 

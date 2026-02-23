@@ -209,7 +209,7 @@ Files: `app/api/posts/route.ts`, `app/api/stream/route.ts`
 1. **Install dependencies**
 
    ```bash
-   cd /home/work/yc-opennext/fixtures/next13-app-router
+   cd /home/work/yc-next/fixtures/next13-app-router
    npm install
    ```
 

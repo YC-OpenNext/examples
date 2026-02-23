@@ -26,7 +26,7 @@ const blogPosts: Record<string, { title: string; content: string; author: string
       With features like Incremental Static Regeneration (ISR), you can have the best of
       both worlds: static generation for performance and dynamic updates when content changes.
     `,
-      author: 'YC-OpenNext Team',
+      author: 'YC-Next Team',
       date: '2024-01-15',
     },
     'dynamic-routing': {
@@ -45,28 +45,28 @@ const blogPosts: Record<string, { title: string; content: string; author: string
       Dynamic routes can be combined with other Next.js features like ISR and SSR to create
       highly performant and flexible applications.
     `,
-      author: 'YC-OpenNext Team',
+      author: 'YC-Next Team',
       date: '2024-01-20',
     },
     'yandex-cloud-deployment': {
       title: 'Deploying Next.js to Yandex Cloud',
       content: `
-      Deploying Next.js applications to Yandex Cloud is now easier than ever with YC-OpenNext.
+      Deploying Next.js applications to Yandex Cloud is now easier than ever with YC-Next.
       This tool adapts Next.js applications to run on Yandex Cloud infrastructure, taking
       advantage of serverless computing and edge delivery.
 
-      YC-OpenNext handles all the complexity of deploying Next.js features like ISR, server
+      YC-Next handles all the complexity of deploying Next.js features like ISR, server
       actions, and API routes to Yandex Cloud. It automatically configures the necessary
       cloud resources and optimizes your application for production.
 
-      The deployment process is straightforward: build your Next.js app, run YC-OpenNext,
+      The deployment process is straightforward: build your Next.js app, run YC-Next,
       and deploy the output to Yandex Cloud. Your application will be served with high
       performance and scalability.
 
-      With YC-OpenNext, you get the full power of Next.js combined with the reliability
+      With YC-Next, you get the full power of Next.js combined with the reliability
       and performance of Yandex Cloud infrastructure.
     `,
-      author: 'YC-OpenNext Team',
+      author: 'YC-Next Team',
       date: '2024-02-01',
     },
   };

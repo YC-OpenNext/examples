@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test:build": "npm run build && yc-opennext analyze --project . --verbose"
+    "test:build": "npm run build && yc-next analyze --project . --verbose"
   },
   "dependencies": {
     "next": "14.2.35",

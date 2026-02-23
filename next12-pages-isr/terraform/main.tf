@@ -5,7 +5,7 @@
 # incremental static regeneration with revalidate intervals.
 
 module "nextjs" {
-  source = "github.com/YC-OpenNext/terraform-yandex-nextjs//modules/nextjs_yc?ref=v1.0.0"
+  source = "github.com/YC-Next/terraform-yandex-nextjs//modules/nextjs_yc?ref=v1.0.0"
 
   app_name       = "next12-pages-isr"
   env            = "dev"

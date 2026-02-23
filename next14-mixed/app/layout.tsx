@@ -6,22 +6,22 @@ export const metadata: Metadata = {
     default: 'Next.js 14 Mixed Test App',
     template: '%s | Next.js 14 Test',
   },
-  description: 'Comprehensive Next.js 14 test fixture for YC-OpenNext deployment',
+  description: 'Comprehensive Next.js 14 test fixture for YC-Next deployment',
   keywords: ['Next.js', 'React', 'TypeScript', 'Yandex Cloud', 'OpenNext', 'ISR', 'SSR'],
-  authors: [{ name: 'YC-OpenNext Team' }],
-  creator: 'YC-OpenNext',
+  authors: [{ name: 'YC-Next Team' }],
+  creator: 'YC-Next',
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://example.com',
     title: 'Next.js 14 Mixed Test App',
-    description: 'Comprehensive Next.js 14 test fixture for YC-OpenNext deployment',
+    description: 'Comprehensive Next.js 14 test fixture for YC-Next deployment',
     siteName: 'Next.js 14 Test',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Next.js 14 Mixed Test App',
-    description: 'Comprehensive Next.js 14 test fixture for YC-OpenNext deployment',
+    description: 'Comprehensive Next.js 14 test fixture for YC-Next deployment',
   },
   robots: {
     index: true,
@@ -66,7 +66,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </header>
           <main className="main-content">{children}</main>
           <footer className="footer">
-            <p>&copy; 2024 Next.js 14 Test App - Powered by YC-OpenNext</p>
+            <p>&copy; 2024 Next.js 14 Test App - Powered by YC-Next</p>
           </footer>
         </div>
       </body>

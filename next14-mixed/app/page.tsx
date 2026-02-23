@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Home',
-  description: 'Next.js 14 comprehensive test fixture for YC-OpenNext',
+  description: 'Next.js 14 comprehensive test fixture for YC-Next',
 };
 
 async function getServerData() {
@@ -26,7 +26,7 @@ export default async function Home() {
     <div className="page-container">
       <h1 className="page-title">Next.js 14 on Yandex Cloud</h1>
       <p className="page-description">
-        Comprehensive test fixture for YC-OpenNext demonstrating all major Next.js 14 features
+        Comprehensive test fixture for YC-Next demonstrating all major Next.js 14 features
       </p>
 
       <div className="section">

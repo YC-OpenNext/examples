@@ -8,7 +8,7 @@ terraform {
 
     # Bucket for Terraform state (must be created manually)
     bucket = "my-terraform-state-bucket"
-    key    = "yc-opennext/next15-modern/terraform.tfstate"
+    key    = "yc-next/next15-modern/terraform.tfstate"
     region = "ru-central1"
 
     # Credentials (set via environment variables)

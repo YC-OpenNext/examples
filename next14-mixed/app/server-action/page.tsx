@@ -88,7 +88,7 @@ async function getTodos() {
     {
       id: '2',
       title: 'Deploy to Yandex Cloud',
-      description: 'Use YC-OpenNext for deployment',
+      description: 'Use YC-Next for deployment',
       completed: false,
     },
     {

@@ -17,7 +17,7 @@ export default function AboutPage() {
         <h2 className="section-title">Purpose</h2>
         <div className="card">
           <p>
-            This Next.js 14 test fixture is designed to comprehensively test the YC-OpenNext
+            This Next.js 14 test fixture is designed to comprehensively test the YC-Next
             deployment system on Yandex Cloud. It demonstrates all major features and patterns used
             in modern Next.js applications.
           </p>
@@ -38,7 +38,7 @@ export default function AboutPage() {
               <strong>Language:</strong> TypeScript 5.3.3
             </li>
             <li>
-              <strong>Deployment:</strong> Yandex Cloud via YC-OpenNext
+              <strong>Deployment:</strong> Yandex Cloud via YC-Next
             </li>
             <li>
               <strong>Build Output:</strong> Standalone mode

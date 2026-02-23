@@ -11,7 +11,7 @@ This guide will get you up and running with the Next.js 13 App Router test fixtu
 
 ```bash
 # Navigate to the fixture directory
-cd /home/work/yc-opennext/fixtures/next13-app-router
+cd /home/work/yc-next/fixtures/next13-app-router
 
 # Install dependencies
 npm install

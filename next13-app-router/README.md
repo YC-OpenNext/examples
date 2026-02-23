@@ -428,7 +428,7 @@ This example includes Terraform configuration for deploying to Yandex Cloud.
    ```bash
    npm install
    npm run build
-   yc-opennext build --project . --output ./build
+   yc-next build --project . --output ./build
    ```
 
 2. Configure and apply Terraform:
