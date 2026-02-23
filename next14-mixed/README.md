@@ -382,6 +382,31 @@ npx yc-opennext
 - [x] Loading states (could be enhanced)
 - [x] Streaming (implicit in App Router)
 
+## Deployment to Yandex Cloud
+
+This example includes Terraform configuration for deploying to Yandex Cloud.
+
+### Quick Start
+
+1. Build the application:
+
+   ```bash
+   npm install
+   npm run build
+   yc-opennext build --project . --output ./build
+   ```
+
+2. Configure and apply Terraform:
+
+   ```bash
+   cd terraform
+   # Edit main.tf to set your domain_name and other parameters
+   terraform init
+   terraform apply
+   ```
+
+See [terraform/README.md](terraform/README.md) for detailed instructions.
+
 ## Contributing
 
 This is a test fixture. Modifications should ensure comprehensive coverage of Next.js 14 features for YC-OpenNext validation.

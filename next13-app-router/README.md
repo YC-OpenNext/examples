@@ -417,6 +417,31 @@ Next.js 13 supports:
 - [Route Handlers](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
 - [Metadata API](https://nextjs.org/docs/app/building-your-application/optimizing/metadata)
 
+## Deployment to Yandex Cloud
+
+This example includes Terraform configuration for deploying to Yandex Cloud.
+
+### Quick Start
+
+1. Build the application:
+
+   ```bash
+   npm install
+   npm run build
+   yc-opennext build --project . --output ./build
+   ```
+
+2. Configure and apply Terraform:
+
+   ```bash
+   cd terraform
+   # Edit main.tf to set your domain_name and other parameters
+   terraform init
+   terraform apply
+   ```
+
+See [terraform/README.md](terraform/README.md) for detailed instructions.
+
 ## Version Info
 
 - Next.js: 13.5.6 (latest v13)
