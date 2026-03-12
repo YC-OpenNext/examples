@@ -8,32 +8,36 @@ env:
   NODE_VERSION: 22
 
 jobs:
+  compatibility:
+    name: Compatibility Matrix Check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - run: node scripts/check-compat-matrix.mjs
+      - run: node scripts/check-one-command-flow.mjs
+
   build-examples:
     name: Build Example
+    needs: compatibility
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
         example:
-          - next12-pages-isr
           - next13-app-router
           - next14-mixed
           - next15-modern
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-
-      - name: Install dependencies
+      - run: npm install
         working-directory: ${{ matrix.example }}
-        run: npm install
-
-      - name: Build
+      - run: npm run build
         working-directory: ${{ matrix.example }}
-        run: npm run build
-
-      - name: Verify build output
+      - run: test -d .next
         working-directory: ${{ matrix.example }}
-        run: test -d .next

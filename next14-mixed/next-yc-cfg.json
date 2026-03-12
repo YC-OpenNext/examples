@@ -1,0 +1,7 @@
+{
+  "runtime": {
+    "env": {
+      "LOG_LEVEL": "info"
+    }
+  }
+}

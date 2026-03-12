@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "nextjs": {
+    "supportedMajors": [13, 14, 15],
+    "previewMajor": 16
+  },
+  "examples": [
+    { "name": "next13-app-router", "nextMajor": 13 },
+    { "name": "next14-mixed", "nextMajor": 14 },
+    { "name": "next15-modern", "nextMajor": 15 }
+  ]
+}

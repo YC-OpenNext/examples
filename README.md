@@ -1,42 +1,26 @@
-# YC-OpenNext Examples
+# Next-YC Examples
 
-Example Next.js projects demonstrating deployment to Yandex Cloud with [YC-OpenNext](https://github.com/YC-OpenNext/cli).
+Next.js fixtures for validating one-command deployment with `next-yc deploy`.
 
 ## Examples
 
-| Directory | Next.js | Router | Features | Terraform |
-|-----------|---------|--------|----------|-----------|
-| `next12-pages-isr/` | 12.3.7 | Pages | ISR, catch-all routes, API routes, i18n | ISR enabled |
-| `next13-app-router/` | 13.5.11 | App | Server Components, parallel routes, streaming | Minimal (no ISR) |
-| `next14-mixed/` | 14.2.35 | App + Pages | Middleware, Server Actions, mixed routing | ISR enabled, higher memory |
-| `next15-modern/` | 15.5.12 | App | React 19, Server Actions, partial prerendering | Minimal (no ISR) |
+| Directory | Next.js | Focus |
+|-----------|---------|-------|
+| `next13-app-router` | 13.x | App Router, Server Components, streaming |
+| `next14-mixed` | 14.x | Mixed routers, Middleware, Server Actions |
+| `next15-modern` | 15.x | React 19, modern patterns |
 
-Each example includes a `terraform/` directory with deployment configuration for Yandex Cloud.
+Matrix source of truth: `compat-matrix.json` (validated in CI).
+One-command flow source-of-truth check: `scripts/check-one-command-flow.mjs` (validated in CI).
 
-## Getting Started
+## Standard Flow (per example)
 
 ```bash
-cd next14-mixed
 npm install
-npm run build
-npm run dev
+next-yc deploy --project . --verbose
 ```
 
-## Deploy to Yandex Cloud
+`next-yc deploy` runs app build automatically when `build` script exists.
+Deploy is execution-enabled by default; use `--dry-run` for dry-run planning.
 
-```bash
-cd next14-mixed
-
-# Build
-npm install && npm run build
-yc-opennext build --project . --output ./build
-
-# Deploy
-cd terraform
-# Edit main.tf to set your domain_name and other parameters
-terraform init && terraform apply
-```
-
-## License
-
-MIT
+Each example now includes `next-yc-cfg.json` with runtime env placeholders.
